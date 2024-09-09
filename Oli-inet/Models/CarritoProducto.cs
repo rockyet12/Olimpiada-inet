@@ -1,0 +1,25 @@
+using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations.Schema;
+
+namespace Oli_inet;
+[Table("CarritoProducto")]
+public class CarritoProducto
+{
+    [Key]
+    [Required]
+    [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
+    public int IdcarritoProducto { get; set; }
+
+    [Required]
+    [ForeignKey("IdCarrito")]
+    public Carrito? Carrito { get; set; }
+
+    [Required]
+    public int Codigo { get; set; }
+
+    [Required]
+    public int Cantidad { get; set; }
+
+    [Required]
+    public bool Pagado { get; set; }
+}
