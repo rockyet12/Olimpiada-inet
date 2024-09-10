@@ -1,12 +1,9 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Diagnostics.CodeAnalysis;
-using System.Runtime.CompilerServices;
 
 namespace Oli_inet;
-
-[Table("Cliente")]
-public class Cliente
+[Table("UsuarioNoValido")]
+public class UsuarioNoValido 
 {
     
     [Key]
@@ -45,6 +42,4 @@ public class Cliente
     [StringLength(50)]
     public string  Direccion {get; set;}=string.Empty;
 
-    [Required]
-    public bool Bloqueado {get; set;}
 }
