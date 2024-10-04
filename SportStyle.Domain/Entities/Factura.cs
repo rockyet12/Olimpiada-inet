@@ -34,7 +34,7 @@ public class Factura
     public decimal Acumulado { get; set; }
     
     [Required]
-    public bool Pagado { get; set; }
+    public bool Pagado { get; set; }//pagado o no pagado
 
     [Required]
     public bool FacturaPagadoTotal { get; set; }

@@ -39,7 +39,7 @@ public class Cliente
     protected int DNI {get; set;}
 
     [Required]
-    protected int codigoRecuperacion {get; set;}
+    protected int CodigoRecuperacion {get; set;}
 
     [Required]
     [StringLength(50)]
