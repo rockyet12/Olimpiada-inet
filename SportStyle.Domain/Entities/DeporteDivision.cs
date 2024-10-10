@@ -15,5 +15,10 @@ public class DeporteDivision
     [Key]
     [ForeignKey("IdDeporte")]
     public Deporte? Deporte{get; set;}=null;
+    public DeporteDivision(Deporte Deporte)
+    {
+        this.Deporte = Deporte;
+    }
+
 }
 

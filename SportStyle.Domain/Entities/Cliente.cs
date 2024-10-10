@@ -47,4 +47,16 @@ public class Cliente
 
     [Required]
     public bool Bloqueado {get; set;}
+    public Cliente(string email, string password,int telefono, string nameUSuario, string nombre, int DNI, int CodigoRecuperacion,string direccion, bool bloqueado)
+    {
+        Email = email;
+        Password = password;
+        Telefono = telefono;
+        this.nameUSuario = nameUSuario;
+        Nombre = nombre;
+        this.DNI = DNI;
+        this.CodigoRecuperacion = CodigoRecuperacion;
+        Direccion = direccion;
+        Bloqueado = bloqueado;
+    }
 }

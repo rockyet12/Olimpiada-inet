@@ -41,5 +41,19 @@ public class UsuarioNoValido
     [Required]
     [StringLength(50)]
     public string  Direccion {get; set;}=string.Empty;
+    
+    public UsuarioNoValido(string email,string password,int telefono,string nameUsuario,string nombre,string apellido,int dni,int codigoRecuperacion,string direccion)
+    {
+        Email = email;
+        Password = password;
+        Telefono = telefono;
+        nameUSuario = nameUsuario;
+        Nombre = nombre;
+        Apellido = apellido;
+        DNI = dni;
+        this.codigoRecuperacion = codigoRecuperacion;
+        Direccion = direccion;
+
+    }
 
 }

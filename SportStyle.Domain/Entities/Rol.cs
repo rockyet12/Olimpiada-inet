@@ -12,4 +12,10 @@ public class Rol
 
     [Required]
     public string Name { get; set; }=string.Empty;
+
+    public Rol(string name)
+    {
+        this.Name = name;
+
+    }
 }

@@ -51,4 +51,36 @@ public class Producto
 
     [Required]
     public decimal PrecioUnitario { get; set; }
+
+    public Producto(int codigo,Tipo tipo,Cliente cliente,DeporteDivision deporteDivision,int Stock,string name,string descripcion,string color,int talle,int cuotas,DateOnly FechaPublicacion,decimal PrecioUnitario)
+    {
+        Codigo = codigo;
+        this.tipo = tipo;
+        Cliente = cliente;
+        this.deporteDivision = deporteDivision;
+        this.Stock = Stock;
+        Name = name;
+        Descripcion = descripcion;
+        Color = color;
+        Talle = talle;
+        Cuotas = cuotas;
+        this.FechaPublicacion = FechaPublicacion;
+        this.PrecioUnitario = PrecioUnitario;
+
+    }
+
+    public Producto(string motivo, Tipo tipo, Cliente cliente, string name, string descripcion, string color, int talle, int cuotas, int stock, DateOnly fechaPublicacion, DeporteDivision deporteDivision, decimal precioUnitario)
+    {
+        this.tipo = tipo;
+        Cliente = cliente;
+        Name = name;
+        Descripcion = descripcion;
+        Color = color;
+        Talle = talle;
+        Cuotas = cuotas;
+        Stock = stock;
+        FechaPublicacion = fechaPublicacion;
+        this.deporteDivision = deporteDivision;
+        PrecioUnitario = precioUnitario;
+    }
 }

@@ -44,4 +44,18 @@ public class Pedido
 
     [Required]
     public DateOnly FechaEntrega { get; set; }
+
+    public Pedido(Cliente cliente,MetodoDePago metodoDePago,string calle, string ciudad, string provincia, int CodigoP, bool entregado, decimal MontoT, DateOnly FechaPedido, DateOnly FechaEntrega)
+    {
+        Cliente = cliente;
+        MetodoDePago = metodoDePago;
+        Calle = calle;
+        Ciudad = ciudad;
+        Provincia = provincia;
+        this.CodigoP = CodigoP;
+        Entregado = entregado;
+        this.MontoT = MontoT;
+        this.FechaPedido = FechaPedido;
+        this.FechaEntrega = FechaEntrega;
+    }
 }

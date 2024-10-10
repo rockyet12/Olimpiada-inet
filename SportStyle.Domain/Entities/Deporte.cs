@@ -14,4 +14,8 @@ public class Deporte
     [Required]
     [StringLength(50)]
     public string Name {get; set;}=string.Empty;
+    public Deporte (string name )
+    {
+        Name = name;
+    }
 }

@@ -13,4 +13,9 @@ public class Carrito
     [ForeignKey("IdCliente")]
     [Required]
     public Cliente? Cliente{ get; set;}
+
+    public Carrito(Cliente cliente)
+    {
+        Cliente = cliente;
+    }
 }

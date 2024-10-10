@@ -3,7 +3,7 @@ namespace SportStyle.Application.Repositories;
 
 public interface IPedidoRepository
 {
-    void Crear(Pedido pedido);
+    void Crear();
     void Modificar(Pedido pedido);
     void Eliminar(int idpedido);
     void Estado(Pedido pedido);

@@ -17,5 +17,10 @@ public class Division
    [Required]
    [StringLength(20)]
    public string Genero {get; set;}=string.Empty;
+   public Division(int edad, string genero)
+   {
+      Edad = edad;
+      Genero = genero;
+   }
 }
  

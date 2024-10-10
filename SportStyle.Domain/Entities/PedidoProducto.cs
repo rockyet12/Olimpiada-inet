@@ -17,4 +17,11 @@ public class PedidoProducto
     
     [Required]
     public int Codigo { get; set; }
+
+    public PedidoProducto(Pedido pedido, int codigo)
+    {
+        this.pedido = pedido;
+        this.Codigo = codigo;
+
+    }
 }

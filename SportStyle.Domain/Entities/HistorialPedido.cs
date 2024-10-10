@@ -44,4 +44,17 @@ public class HistorialPedido
 
     [Required]
     public DateOnly FechaEntregado { get; set; }
+    public HistorialPedido(Cliente cliente,int MetodoDePago,string calle,string ciudad,string provincia, string CodigoPostal,bool entregado, decimal MontoTotal, DateOnly FechaPedido,DateOnly FechaEntregado)
+    {
+        this.cliente = cliente;
+        this.MetodoDePago = MetodoDePago;
+        Calle = calle;
+        Ciudad = ciudad;
+        Provincia = provincia;
+        this.CodigoPostal = CodigoPostal;
+        Entregado = entregado;
+        this.MontoTotal = MontoTotal;
+        this.FechaPedido = FechaPedido;
+        this.FechaEntregado = FechaEntregado;   
+    }
 }

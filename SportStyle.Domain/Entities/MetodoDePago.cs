@@ -10,4 +10,8 @@ public class MetodoDePago
     [DatabaseGenerated(DatabaseGeneratedOption.Identity)]
     public int IdMetodo { get; set; }
     public string Name {get; set;}=string.Empty;
+    public MetodoDePago(string name)
+    {
+        Name = name;
+    }
 }

@@ -12,4 +12,10 @@ public class Tipo
     
     [Required]
     public string Name {get; set;}=string.Empty;
+
+    public Tipo(string name)
+    {
+        this.Name = name;
+
+    }
 }

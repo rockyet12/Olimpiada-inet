@@ -22,4 +22,10 @@ public class CarritoProducto
 
     [Required]
     public bool Pagado { get; set; }
+    public CarritoProducto(Carrito carrito, int cantidad,bool pagado)
+    {
+        Carrito=carrito;
+        Cantidad = cantidad;
+        Pagado = pagado;
+    }
 }

@@ -1,6 +1,5 @@
 using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
-using System.Runtime.InteropServices;
 
 namespace SportStyle.Domain.Entities;
 [Table("Factura")]
@@ -38,5 +37,17 @@ public class Factura
 
     [Required]
     public bool FacturaPagadoTotal { get; set; }
+    public Factura(Pedido pedido,DateOnly fechafactura, DateOnly fechapagar,int NumCuotas,decimal MontoAbonar,decimal MontoTotal, decimal acumulado,bool pagado, bool FacturaPagadoTotal) 
+    {
+        this.pedido = pedido;
+        FechaFactura = fechafactura;
+        FechaPagar = fechapagar;
+        this.NumCuotas = NumCuotas;
+        this.MontoAbonar = MontoAbonar;
+        this.MontoTotal = MontoTotal;
+        Acumulado = acumulado;
+        Pagado = pagado;
+        this.FacturaPagadoTotal = FacturaPagadoTotal;
+    }
 
 }
